@@ -1,0 +1,225 @@
+/* Global styles */
+body {
+	margin: 0;
+	font-family: "Poppins", sans-serif;
+	box-sizing: border-box;
+	background-color: #f0f4f8;
+	color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+	position: relative;
+	height: 100vh;
+	background: linear-gradient(135deg, #003366, #00aaff),
+		url("../images/review.jpg") no-repeat center center/cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	text-align: center;
+	padding: 40px;
+	border-radius: 10px;
+	animation: fadeIn 2s ease-in-out;
+}
+
+.hero-section h1 {
+	font-size: 4vw;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.hero-section p {
+	font-size: 1.8vw;
+	margin-bottom: 30px;
+}
+
+.cta-button {
+	padding: 15px 40px;
+	background-color: #ff4500;
+	border: none;
+	border-radius: 50px;
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+	box-shadow: 0px 4px 15px rgba(255, 69, 0, 0.5);
+	transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+	transform: scale(1.1);
+	background-color: #ff6347;
+	box-shadow: 0px 8px 20px rgba(255, 99, 71, 0.7);
+}
+
+/* Our Story Section */
+.story-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 80px 10%;
+	background-color: #ffffff;
+	animation: slideIn 1.5s ease-in-out;
+}
+
+.story-content {
+	display: flex;
+	max-width: 1200px;
+	flex-wrap: wrap;
+	gap: 40px;
+}
+
+.story-text {
+	flex: 1;
+	max-width: 500px;
+}
+
+.story-image {
+	flex: 1;
+}
+
+.story-image img {
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	transition: transform 0.3s ease;
+}
+
+.story-image img:hover {
+	transform: scale(1.05);
+}
+
+.story-section h2 {
+	font-size: 2.5rem;
+	color: #003366;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.story-section p {
+	font-size: 1.1rem;
+	line-height: 1.8;
+	color: #555;
+}
+
+/* Video Section */
+.video-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 80px 10%;
+	background-color: #f0f4f8;
+}
+
+.drs-video {
+	width: 80%;
+	border-radius: 10px;
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Let’s Work Together Section */
+.work-together-section {
+	background: linear-gradient(135deg, #005888, #00aaff);
+	color: white;
+	padding: 80px 10%;
+	text-align: center;
+	animation: fadeInUp 2s ease;
+}
+
+.work-together-section h2 {
+	font-size: 2.5rem;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.work-together-section p {
+	font-size: 1.2rem;
+	margin-bottom: 40px;
+}
+
+.work-together-section .cta-button {
+	background-color: #ff4500;
+	padding: 15px 40px;
+	font-size: 18px;
+	border-radius: 50px;
+	transition: transform 0.3s ease, background-color 0.3s ease;
+	box-shadow: 0px 4px 15px rgba(255, 69, 0, 0.5);
+}
+
+.work-together-section .cta-button:hover {
+	transform: scale(1.1);
+	background-color: #ff6347;
+}
+
+/* Animations */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideIn {
+	from {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+	.story-content {
+		flex-direction: column;
+		text-align: center;
+	}
+	.story-text,
+	.story-image {
+		flex: unset;
+	}
+}
+
+@media (max-width: 768px) {
+	.hero-section h1 {
+		font-size: 6vw;
+	}
+	.hero-section p {
+		font-size: 4vw;
+	}
+	.cta-button {
+		width: 100%;
+		padding: 15px;
+	}
+	.story-section,
+	.video-section,
+	.work-together-section {
+		padding: 50px 5%;
+	}
+	.drs-video {
+		width: 100%;
+	}
+}

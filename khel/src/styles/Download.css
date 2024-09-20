@@ -1,0 +1,225 @@
+/* Main Page */
+.downloas-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    background-color: #f4f7f9;
+    padding: 2rem;
+}
+
+/* Download Container */
+.download-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    color: #333;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Top & Bottom Sections */
+.download-container-top-section,
+.download-container-bottom-section,
+.download-container-top-section > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.download-container-top-section > div,
+.download-container-bottom-section > div {
+    background-color: #0073e6;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    color: #fff;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-container-top-section > div:hover,
+.download-container-bottom-section > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons Styling */
+.download-container .download-container-top-section div > div,
+.download-container .download-container-bottom-section div > div {
+    align-self: flex-end;
+}
+
+/* Installation Instructions Section */
+.installation-instructions {
+    padding: 50px;
+    text-align: center;
+    background-color: #f4f7f9;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.installation-instructions h2 {
+    font-size: 36px;
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+.installation-instructions p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.instruction-steps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.instruction-step {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 22%;
+    padding: 30px;
+    text-align: left;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.instruction-step:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+.step-icon {
+    font-size: 35px;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.instruction-step h3 {
+    font-size: 22px;
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+.instruction-step p {
+    font-size: 16px;
+    color: #000000;
+}
+
+.instruction-step a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.instruction-step a:hover {
+    text-decoration: underline;
+}
+
+/* Video Section */
+.video-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.video-section .react-player {
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* "How to Use" Section */
+.doenload-section-use {
+    padding: 40px;
+    background-color: #0073e6;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 5rem;
+}
+
+.download-secton-use-heading h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.doenload-section-use .instruction-step {
+    background-color: #005888;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.doenload-section-use .instruction-step:hover {
+    background-color: #0073e6;
+}
+
+.doenload-section-use .instruction-step h3 {
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.downloas-page, .instruction-steps, .video-section, .doenload-section-use {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .instruction-step {
+        flex: 1 1 45%;
+        margin-bottom: 20px;
+    }
+    .download-container-top-section > div,
+    .download-container-bottom-section > div {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .instruction-step {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+    .download-container-top-section > div,
+    .download-container-bottom-section > div {
+        padding: 1.5rem;
+    }
+    .installation-instructions h2 {
+        font-size: 28px;
+    }
+    .download-secton-use-heading h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .instruction-step {
+        padding: 20px;
+    }
+    .instruction-step h3 {
+        font-size: 18px;
+    }
+    .download-container-top-section > div,
+    .download-container-bottom-section > div {
+        padding: 1rem;
+    }
+}

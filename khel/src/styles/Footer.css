@@ -1,0 +1,36 @@
+/* Footer.css */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.footer-content a {
+	color: #00bfff;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+.footer-content a:hover {
+	text-decoration: underline;
+}
+
+.footer-links {
+	margin: 20px 0;
+}
+
+.login-link {
+	color: red;
+}
+
+.social-icons img {
+	width: 24px;
+	height: 24px;
+	margin: 0 10px;
+}
+
+.social-icons {
+	margin-top: 20px;
+}
