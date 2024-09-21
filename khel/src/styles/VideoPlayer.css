@@ -1,0 +1,46 @@
+/* Container for the video player */
+.video-player-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+  
+  /* Wrapper to keep the aspect ratio of the video */
+  .video-wrapper {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    width: 100%;
+    max-width: 1000px; /* Set max width of the video */
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* ReactPlayer styles */
+  .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .video-wrapper {
+      padding-top: 75%; /* Change aspect ratio for smaller devices */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .video-wrapper {
+      padding-top: 100%; /* Change aspect ratio for mobile devices */
+    }
+  }
+  

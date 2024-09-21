@@ -2,6 +2,9 @@ import React from "react";
 import "../styles/Download.css";
 import DownloadButton from "../components/Buttons/DownloadButton";
 import ReactPlayer from "react-player";
+import video1 from "../videos/WhatsApp Video 2024-07-07 at 00.27.26.mp4";
+import VideoPlayer from "../components/Videoplayer";
+import VideoCarousel from "../components/VideoCarousel";
 const Downloads = () => {
 	return (
 		<div className="downloas-page">
@@ -88,7 +91,7 @@ const Downloads = () => {
 				</div>
 			</section>
 			<section className="video-section">
-				<ReactPlayer url="https://youtu.be/49I2DmzMP64" />
+				<VideoCarousel />
 			</section>
 			<section className="doenload-section-use">
 				<div className="download-secton-use-heading">

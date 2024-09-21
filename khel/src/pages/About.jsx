@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/About.css";
 import ReactPlayer from "react-player";
+import { Link } from "react-router-dom";
 import about_img from "../images/review.jpg";
 const About = () => {
 	return (
@@ -50,7 +51,9 @@ const About = () => {
 					Connect with us to explore how we can make your vision a reality. Join
 					us in shaping the future.
 				</p>
-				<button className="cta-button">Get Started</button>
+				<Link to="/pricing">
+					<button className="cta-button">Get Started</button>
+				</Link>
 			</section>
 		</div>
 	);

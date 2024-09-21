@@ -1,0 +1,58 @@
+/* Container for the carousel */
+.carousel-container {
+    width: 50%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Individual slide */
+  .carousel-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Title for each video */
+  .carousel-slide h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #005888;
+    font-weight: bold;
+  }
+  
+  /* Custom styles for react-carousel */
+  .carousel .control-arrow {
+    background-color: #005888 !important;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .carousel .control-arrow:hover {
+    background-color: #007bff !important;
+  }
+  
+  .carousel .control-prev.control-arrow:before {
+    border-left: 8px solid white;
+  }
+  
+  .carousel .control-next.control-arrow:before {
+    border-right: 8px solid white;
+  }
+  
+  .carousel .carousel-status {
+    display: none;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .carousel-slide h3 {
+      font-size: 18px;
+    }
+  }
+  

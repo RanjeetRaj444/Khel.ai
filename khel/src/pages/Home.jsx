@@ -6,6 +6,8 @@ import NavButton from "../components/Buttons/NavButton";
 import challengephoto1 from "../images/channels-home.jpeg";
 import chooseImage1 from "../images/pngwing.com (9).png";
 import chooseImage2 from "../images/pngwing.com (7).png";
+import VideoCarousel from "../components/VideoCarousel";
+import Faq from "../components/Faq";
 
 const Home = () => {
 	return (
@@ -35,9 +37,16 @@ const Home = () => {
 					))}
 				</div>
 			</section>
+			<section className="video-section-home">
+				<h1>Our Works :-</h1>
+				<VideoCarousel />
+			</section>
 			<section className="challenges-section">
 				<div className="image-container">
-					<img src={challengephoto1} alt="Cricket player" />
+					<img
+						src="https://as2.ftcdn.net/v2/jpg/04/48/70/43/1000_F_448704319_FSwmNX1fqLMPZzOw1g9leDPeIXWsWQz7.jpg"
+						alt="Cricket player"
+					/>
 				</div>
 				<div className="content-container">
 					<h2>Challenges Faced by Traditional Cricket Analysis</h2>
@@ -66,7 +75,10 @@ const Home = () => {
 					</ul>
 				</div>
 				<div className="image-container">
-					<img src={challengephoto1} alt="Cricket player" />
+					<img
+						src="https://as2.ftcdn.net/v2/jpg/04/48/70/33/1000_F_448703371_XwNIWrsjtwV8Py4L6KjlnBnrjXhpDfyE.jpg"
+						alt="Cricket player"
+					/>
 				</div>
 			</section>
 
@@ -112,6 +124,7 @@ const Home = () => {
 					</div>
 				</div>
 			</section>
+			<Faq />
 		</main>
 	);
 };

@@ -1,34 +1,59 @@
 import React from "react";
 import "../styles/Footer.css";
 import { Link } from "react-router-dom";
-const Footter = () => {
+import { FaTwitter, FaFacebookF, FaLinkedinIn } from "react-icons/fa"; // Import icons
+
+const Footer = () => {
 	return (
-		<footer>
+		<footer className="footer-container">
 			<div className="footer-content">
-				<a href="#top">Back to Top</a>
-				<p>Registered Address: Delhi India</p>
-				<p>© Business 2 Community. All Rights Reserved.</p>
-				<div className="footer-links">
-					<Link href="/privacy">Privacy & Terms of Use</Link>
-					<a href="/about">About B2C</a>
-					<a href="#">Why Trust Us</a>
-					<a href="/policy">Editorial Policy</a>
-					<a href="#">Email us</a>
+				<div className="footer-left">
+					<a href="#top" className="back-to-top">
+						Back to Top
+					</a>
+					<p>Registered Address: Delhi, India</p>
+					<p>© Khel.AI. All Rights Reserved.</p>
+				</div>
+
+				<div className="footer-right">
+					<div className="footer-logo">
+						<Link to={"/"}>
+							{" "}
+							<h2>Khel.AI</h2>
+						</Link>
+					</div>
+					<div className="footer-links">
+						<Link to="/refund-policy">Refund Policies</Link>
+						<Link to="/privacy">Privacy & Terms of Use</Link>
+						<a href="/about">About Us</a>
+						<a href="#">Why Trust Us</a>
+						<Link to="/policy">Editorial Policy</Link>
+						<a href="mailto:vaibhav@khel.ai">Email us</a>
+					</div>
 				</div>
 			</div>
+
 			<div className="social-icons">
-				<a href="#">
-					<img src="twitter-icon.png" alt="Twitter" />
+				<a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+					<FaTwitter className="icon" />
 				</a>
-				<a href="#">
-					<img src="facebook-icon.png" alt="Facebook" />
+				<a
+					href="https://facebook.com"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<FaFacebookF className="icon" />
 				</a>
-				<a href="#">
-					<img src="linkedin-icon.png" alt="LinkedIn" />
+				<a
+					href="https://linkedin.com"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<FaLinkedinIn className="icon" />
 				</a>
 			</div>
 		</footer>
 	);
 };
 
-export default Footter;
+export default Footer;

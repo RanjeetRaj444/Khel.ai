@@ -9,7 +9,7 @@ const Navbar = ({ home }) => {
 	const [openMenu, setOpenMenu] = useState(false);
 	return (
 		<nav id="nav-menu">
-			<Link to="home" offset={-100}>
+			<Link to="/" offset={-100}>
 				<div className="brand">
 					<h3 id="user-detail-name">Khel.ai</h3>
 				</div>

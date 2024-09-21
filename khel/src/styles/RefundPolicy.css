@@ -1,0 +1,92 @@
+/* Container for refund policy */
+.refund-policy-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+	font-family: "Arial", sans-serif;
+}
+
+/* Section header */
+.refund-policy-header h1 {
+	font-size: 36px;
+	color: #005888;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.refund-policy-header p {
+	font-size: 18px;
+	color: #555;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+/* Refund policy sections */
+.refund-policy-section h2 {
+	font-size: 28px;
+	color: #005888;
+	margin-bottom: 20px;
+}
+
+.refund-policy-section h3 {
+	font-size: 22px;
+	color: #007bff;
+	margin-bottom: 10px;
+}
+
+.refund-policy-section ul {
+	margin-left: 20px;
+	list-style-type: disc;
+}
+
+.refund-policy-section li {
+	font-size: 16px;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.refund-policy-section p {
+	font-size: 16px;
+	color: #666;
+}
+
+/* Links */
+.refund-policy-section a {
+	color: #007bff;
+	text-decoration: none;
+}
+
+.refund-policy-section a:hover {
+	text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.refund-policy-container {
+		padding: 20px;
+	}
+
+	.refund-policy-header h1 {
+		font-size: 28px;
+	}
+
+	.refund-policy-header p {
+		font-size: 16px;
+	}
+
+	.refund-policy-section h2 {
+		font-size: 24px;
+	}
+
+	.refund-policy-section h3 {
+		font-size: 20px;
+	}
+
+	.refund-policy-section li,
+	.refund-policy-section p {
+		font-size: 14px;
+	}
+}
